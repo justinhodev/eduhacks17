@@ -7,3 +7,9 @@
   text-align: center;
   margin-top: 5%;
 }
+
+
+#img_format{
+    cursor: pointer;
+    max-width: 100%;
+}
