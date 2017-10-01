@@ -4,19 +4,19 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 
 export class Lesson {
-  constructor(public id: number, public name: string) { }
+  constructor(public id: number, public name: string, public description: string) { }
 }
 
 const LESSONS = [
-  new Lesson(1, 'Sun'),
-  new Lesson(2, 'Mercury'),
-  new Lesson(3, 'Venus'),
-  new Lesson(4, 'Earth'),
-  new Lesson(5, 'Mars'),
-  new Lesson(6, 'Jupiter'),
-  new Lesson(7, 'Saturn'),
-  new Lesson(8, 'Uranus'),
-  new Lesson(9, 'Neptune')
+  new Lesson(1, 'Sun', 'The sun is v hot'),
+  new Lesson(2, 'Mercury', 'Mercury is light metal'),
+  new Lesson(3, 'Venus', 'The Roman Goddess of love'),
+  new Lesson(4, 'Earth', 'We live here'),
+  new Lesson(5, 'Mars', 'We don\'t live here but we want to travel here for some reason'),
+  new Lesson(6, 'Jupiter', ''),
+  new Lesson(7, 'Saturn', ''),
+  new Lesson(8, 'Uranus', 'Your behind'),
+  new Lesson(9, 'Neptune', 'The Roman God of the sea')
 ];
 
 @Injectable()

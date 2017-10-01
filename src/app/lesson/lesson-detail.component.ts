@@ -7,8 +7,8 @@ import { Lesson, LessonService } from './lesson.service';
 
 @Component({
     selector: 'app-lesson',
-    templateUrl: './lesson.component.html',
-    styleUrls: ['./lesson.component.css']
+    templateUrl: './lesson-detail.component.html',
+    styleUrls: ['./lesson-detail.component.css']
 })
 export class LessonDetailComponent implements OnInit {
 
@@ -26,11 +26,11 @@ export class LessonDetailComponent implements OnInit {
                 this.service.getLesson(params.get('id')));
     }
 
-    gotolessones(lesson: Lesson) {
+    gotoLessons(lesson: Lesson) {
         let lessonId = lesson ? lesson.id : null;
         // Pass along the lesson id if available
         // so that the lessonList component can select that lesson.
         // Include a junk 'foo' property for fun.
-        this.router.navigate(['/lessons', { id: lessonId, foo: 'foo' }]);
+        this.router.navigate(['/lesson', { id: lessonId, foo: 'foo' }]);
     }
 }
