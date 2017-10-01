@@ -1,12 +1,6 @@
 .title{
 }
 
-.contai {
-    background-image: url("background_image.jpg");
-    padding: 0px;
-    margin: 0px;
-}
-
 .buttons{
   text-align: center;
   color:white;
@@ -15,6 +9,7 @@
 }
 
 #header{
+  color: grey;
   text-align: center;
 }
 
@@ -39,6 +34,7 @@
   background-color: rgb(192, 57, 43);
   margin-right: 10%;
 }
+
 
 .btn-primary.btn-lg{
   height: 175px;
