@@ -1,18 +1,13 @@
-.line1 {
-    width: 112px;
-    height: 97px;
-    border-bottom: 3px solid red;
-    margin-left: 25%;
-    -webkit-transform:
-        translateY(-20px)
-        translateX(20px)
-        rotate(27deg);
-    position: absolute;
-    /* top: -20px; */
-}
-
 title {
   border: 2px;
+}
+
+.content{
+  border-style: solid;
+  padding: 2%;
+    border-width: 1px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 h2 {
