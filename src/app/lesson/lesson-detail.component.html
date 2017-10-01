@@ -1,0 +1,42 @@
+<div class="card">
+    <div class="card-header">
+        <!-- topic heading -->
+        <h2>Solar System</h2>
+    </div>
+
+    <div class="card-block">
+        <div *ngIf="lesson$ | async as lesson">
+            <div class="card-title">
+                <h3>{{ lesson.name }}</h3>
+            </div>
+
+            <div *ngIf="learn; else quiz">
+                <p class="card-text">{{ lesson.description }}</p>
+
+                <button (click)="learn = !learn">Quiz!</button>
+            </div>
+
+            <ng-template #quiz>
+                <div *ngFor="let question of lesson.quiz">
+                    <p>{{ question.id }}. {{ question.question }}</p>
+
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                              <input type="radio" name="options" id="true" autocomplete="off"> True
+                            </label>
+                        <label class="btn btn-danger">
+                              <input type="radio" name="options" id="false" autocomplete="off"> False
+                            </label>
+                    </div>
+                </div>
+
+
+                <button (click)="gotoLessons(lesson) ">Submit</button>
+            </ng-template>
+
+            <div>
+                <button (click)="gotoLessons(lesson)">Back</button>
+            </div>
+        </div>
+    </div>
+</div>

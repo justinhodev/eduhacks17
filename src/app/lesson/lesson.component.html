@@ -1,0 +1,28 @@
+<!-- lesson landing page -->
+<!-- solar system -->
+<div class="card">
+  <!-- subject heading -->
+  <div class="card-header">
+    <h1>Physics</h1>
+  </div>
+
+  <div class="card-block">
+    <!-- topic heading -->
+    <h2 class="card-title">Solar System</h2> 
+    <!-- description -->
+    <p class="card-text">
+      <!--insert description here-->
+    </p>
+
+    <!-- select lesson -->
+    <ul class="lessons">
+      <li *ngFor="let lesson of lessons$ | async"
+        [class.selected]="lesson.id === selectedId">
+        <a [routerLink]="['/lesson', lesson.id]">
+          <span class="label">{{ lesson.name }}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</div>
