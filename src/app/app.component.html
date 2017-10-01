@@ -1,1 +1,42 @@
-<router-outlet></router-outlet>
+<div id="wrapper">
+  <!-- Sidebar -->
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+
+      <li id="avatar">
+        <a routerLink="/dashboard"><img class="avatar" src="../assets/images/default-avatar-crazy-robot.png"></a>
+      </li>
+      <li>
+        <a class="center" routerLink="/dashboard">
+          <div class="center side-item-icon">
+            <i class="fa fa-tachometer" aria-hidden="true"></i>
+          </div>
+          <div class="side-item-text visibility">Dashboard</div>
+        </a>
+      </li>
+      <li >
+        <a class="center"routerLink="/awards">
+          <div class="center side-item-icon">
+            <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+          </div>
+          <div class="side-item-text visibility" >Classes</div>
+        </a>
+      </li>
+      <li>
+        <a class="center" routerLink="/awards">
+          <div class="center side-item-icon">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
+          <div class="side-item-text visibility">Profile</div>
+        </a>
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
