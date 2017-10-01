@@ -13,6 +13,7 @@ import { ClassesComponent } from './classes/classes.component';
 import { ScienceComponent } from './science/science.component';
 import { SolarSystemComponent } from './solar-system/solar-system.component';
 import { StudentListComponent } from './student-list/student-list.component';
+import { StarterComponent } from './starter/starter.component';
 
 
 
@@ -24,7 +25,8 @@ import { StudentListComponent } from './student-list/student-list.component';
     SolarSystemComponent,
     ScienceComponent,
     AwardsComponent,
-    StudentListComponent
+    StudentListComponent,
+    StarterComponent
     ],
   imports: [
     BrowserModule,
