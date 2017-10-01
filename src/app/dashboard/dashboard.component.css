@@ -1,0 +1,20 @@
+.bg-blue{
+  background-color: lightcyan;
+}
+
+.bg-yellow{
+  background-color: lightgoldenrodyellow;
+}
+
+.bg-green{
+  background-color: lightgreen;
+}
+
+.custom-progress-bar {
+  height: 40px;
+}
+
+.student-info-wrap{
+  display: flex;
+  align-items: center;
+}
