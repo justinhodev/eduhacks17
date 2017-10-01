@@ -13,15 +13,9 @@ class Question {
 
 const LESSONS = [
   new Lesson(
-<<<<<<< HEAD
     1, 
     'Sun', 
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo sapien, vehicula quis odio id, consequat mollis eros. Pellentesque pretium elit vel nisl molestie viverra. Vestibulum viverra tellus vel mi sagittis, non semper diam interdum. Quisque eget elementum nibh. Quisque vitae enim varius urna iaculis suscipit. Nam semper lobortis lorem, eu congue nisi viverra a. Donec turpis dui, condimentum vel lacus at, ornare egestas arcu. Sed pretium turpis in erat molestie rhoncus. Praesent feugiat, ante a elementum finibus, est enim aliquam lorem, et commodo risus augue nec augue. Ut ac tortor nec ex maximus viverra id dictum urna. Nunc congue ex id dolor pellentesque, ac luctus urna scelerisque.',
-=======
-    1,
-    'Sun',
-    'The sun is v hot',
->>>>>>> origin/master
     [
       new Question(
         1,
