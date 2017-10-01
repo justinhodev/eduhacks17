@@ -5,9 +5,10 @@ import { AppRoutingModule } from "./app-routing.module";
 
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import  { LessonModule } from './lesson/lesson.module';
 import { AwardsComponent } from './awards/awards.component';
 
-import  { LessonModule } from './lesson/lesson.module'
+import { ScoreTrackingService } from './services/score-tracking.service';
 
 
 
@@ -22,7 +23,8 @@ import  { LessonModule } from './lesson/lesson.module'
     LessonModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ScoreTrackingService],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
