@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { AwardsComponent } from './awards/awards.component';
-
+import { ClassesComponent } from './classes/classes.component';
+import { ScienceComponent } from './science/science.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent,
     children: []},
   { path: 'awards', component: AwardsComponent },
+  { path: 'classes', component: ClassesComponent },
+  { path: 'science', component: ScienceComponent },
   { path: '**', redirectTo: 'dashboard'}
 ];
 
