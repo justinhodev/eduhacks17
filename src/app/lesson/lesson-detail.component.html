@@ -1,5 +1,4 @@
 <div class="card">
-
     <div class="card-header">
         <!-- topic heading -->
         <h2>Solar System</h2>
@@ -19,8 +18,10 @@
 
             <ng-template #quiz>
                 <ol>
-                    <li *ngFor="let question of lesson.quiz">{{ question }}</li>
+                    <li *ngFor="let question of lesson.quiz">{{ question.question }}</li>
                 </ol>
+
+                <button (click)="gotoLessons(lesson) ">Submit</button>
             </ng-template>
 
             <div>
