@@ -57,8 +57,7 @@
               <br>
               <div class="offset-1 col-11">
                 <div *ngFor="let classMember of classesArray">
-
-                  <a routerLink="/{{classMember.name}}"><h5>{{ classMember.name }}</h5></a>
+                  <a routerLink="/lesson"><h5>{{ classMember.name }}</h5></a>
                   <br>
                   <div class="progress">
                     <div class="progress-bar bg-info custom-progress-bar" role="progressbar" [ngStyle]="{'width': getProgWidth(classMember.name)+'%'}"></div>

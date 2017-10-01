@@ -7,7 +7,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent,
-    children: []}
+    children: []},
+  { path: '**', redirectTo: 'dashboard'}
 ];
 
 
