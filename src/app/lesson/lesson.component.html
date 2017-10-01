@@ -1,28 +1,31 @@
 <!-- lesson landing page -->
 <!-- solar system -->
-<div class="card">
+<div class="card" style="background-color: #333; border-color: #333;">
   <!-- subject heading -->
-  <div class="card-header">
-    <h1>Physics</h1>
+  <div class="card-header" style="background-color: #333; border-color: #333;">
+    <div class="text-center" style="color: white;">
+      <br>
+      <h1>Solar System</h1>
+      <br>
+    </div>
   </div>
 
   <div class="card-block">
-    <!-- topic heading -->
-    <h2 class="card-title">Solar System</h2> 
-    <!-- description -->
-    <p class="card-text">
-      <!--insert description here-->
-    </p>
-
-    <!-- select lesson -->
-    <ul class="lessons">
-      <li *ngFor="let lesson of lessons$ | async"
-        [class.selected]="lesson.id === selectedId">
-        <a [routerLink]="['/lesson', lesson.id]">
-          <span class="label">{{ lesson.name }}</span>
-        </a>
-      </li>
-    </ul>
+    <div class="row">
+      <!-- select lesson -->
+      <div class="lessons text-center mx-auto planet-list">
+        <div *ngFor="let lesson of lessons$ | async"
+             [class.selected]="lesson.id === selectedId" class="p-2">
+          <div>
+            <a [routerLink]="['/lesson', lesson.id]">
+              <div class="label p-5">
+                <img src="{{lessonImages[lesson.id]}}" class="pad-planet">
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 </div>

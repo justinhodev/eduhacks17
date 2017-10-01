@@ -2,12 +2,30 @@ title {
   border: 2px;
 }
 
+h2 {
+  color: grey;
+}
+
+#center_it{
+  text-align: center;
+}
+
 .content {
   border-style: solid;
   padding: 2%;
   border-width: 1px;
   margin-left: 20%;
   margin-right: 20%;
+}
+
+#text_con{
+  cursor: pointer;
+}
+
+#img_format{
+    cursor: pointer;
+    margin-top: 15%;
+    height: 200px;
 }
 
 .line1 {
