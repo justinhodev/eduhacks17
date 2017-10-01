@@ -6,6 +6,7 @@ import { ClassesComponent } from './classes/classes.component';
 import { ScienceComponent } from './science/science.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StudentListComponent} from './student-list/student-list.component';
+import { StarterComponent} from './starter/starter.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent,
@@ -14,7 +15,8 @@ const appRoutes: Routes = [
   { path: 'classes', component: ClassesComponent },
   { path: 'science', component: ScienceComponent },
   { path: 'studentList', component: StudentListComponent },
-  { path: '**', redirectTo: 'dashboard'}
+  { path: 'starter', component: StarterComponent},
+  { path: '**', redirectTo: 'starter'}
 ];
 
 
