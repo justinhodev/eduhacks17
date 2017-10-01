@@ -15,7 +15,7 @@ const LESSONS = [
   new Lesson(
     1, 
     'Sun', 
-    'The sun is v hot',
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo sapien, vehicula quis odio id, consequat mollis eros. Pellentesque pretium elit vel nisl molestie viverra. Vestibulum viverra tellus vel mi sagittis, non semper diam interdum. Quisque eget elementum nibh. Quisque vitae enim varius urna iaculis suscipit. Nam semper lobortis lorem, eu congue nisi viverra a. Donec turpis dui, condimentum vel lacus at, ornare egestas arcu. Sed pretium turpis in erat molestie rhoncus. Praesent feugiat, ante a elementum finibus, est enim aliquam lorem, et commodo risus augue nec augue. Ut ac tortor nec ex maximus viverra id dictum urna. Nunc congue ex id dolor pellentesque, ac luctus urna scelerisque.',
     [
       new Question(
         1,
@@ -26,8 +26,8 @@ const LESSONS = [
         'Is Earth hotter than the Sun?',
         false)
     ]),
-  new Lesson(2, 
-    'Mercury', 
+  new Lesson(2,
+    'Mercury',
     'Mercury is light metal',
     [
       new Question(
@@ -39,8 +39,8 @@ const LESSONS = [
         'Is Mercury bigger than Earth?',
         false)
     ]),
-  new Lesson(3, 
-    'Venus', 
+  new Lesson(3,
+    'Venus',
     'The Roman Goddess of love',
     [
       new Question(
@@ -48,8 +48,8 @@ const LESSONS = [
         'Is Venus hotter than the Sun?',
         false)
     ]),
-  new Lesson(4, 
-    'Earth', 
+  new Lesson(4,
+    'Earth',
     'We live here',
     [
       new Question(
@@ -57,8 +57,8 @@ const LESSONS = [
         'Is Earth hotter than the Sun?',
         false)
     ]),
-  new Lesson(5, 
-    'Mars', 
+  new Lesson(5,
+    'Mars',
     'We don\'t live here but we want to travel here for some reason',
     [
       new Question(
@@ -66,8 +66,8 @@ const LESSONS = [
         'Is Mars hotter than the Sun?',
         false)
     ]),
-  new Lesson(6, 
-    'Jupiter', 
+  new Lesson(6,
+    'Jupiter',
     '',
     [
       new Question(
@@ -75,8 +75,8 @@ const LESSONS = [
         'Is Jupiter hotter than the Sun?',
         false)
     ]),
-  new Lesson(7, 
-    'Saturn', 
+  new Lesson(7,
+    'Saturn',
     '',
     [
       new Question(
@@ -84,8 +84,8 @@ const LESSONS = [
         'Is Mercury hotter than the Sun?',
         false)
     ]),
-  new Lesson(8, 
-    'Uranus', 
+  new Lesson(8,
+    'Uranus',
     'Your behind',
     [
       new Question(
@@ -93,8 +93,8 @@ const LESSONS = [
         'Is Uranus hotter than the Sun?',
         false)
     ]),
-  new Lesson(9, 
-    'Neptune', 
+  new Lesson(9,
+    'Neptune',
     'The Roman God of the sea',
     [
       new Question(
