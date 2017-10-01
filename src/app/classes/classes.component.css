@@ -1,0 +1,31 @@
+.title{
+}
+
+.buttons{
+  text-align: center;
+  color:white;
+  padding: 4%;
+  font-size: 25px;
+}
+
+#header{
+  color: grey;
+  text-align: center;
+}
+
+.second_row{
+  margin-top: 5%;
+}
+
+#science{
+    margin-right: 10%;
+}
+
+#socials{
+  margin-right: 10%;
+}
+
+.btn-primary.btn-lg{
+  height: 175px;
+  width: 175px;
+}
