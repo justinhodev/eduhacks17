@@ -11,7 +11,17 @@
                 <h3>{{ lesson.name }}</h3>
             </div>
 
-            <p class="card-text">{{ lesson.description }}</p>
+            <div *ngIf="learn; else quiz">
+                <p class="card-text">{{ lesson.description }}</p>
+
+                <button (click)="learn = !learn">Quiz!</button>
+            </div>
+
+            <ng-template #quiz>
+                <ol>
+                    <li *ngFor="let question of lesson.quiz">{{ question }}</li>
+                </ol>
+            </ng-template>
 
             <div>
                 <button (click)="gotoLessons(lesson)">Back</button>

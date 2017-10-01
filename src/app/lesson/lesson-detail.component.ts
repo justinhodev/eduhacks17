@@ -12,6 +12,8 @@ import { Lesson, LessonService } from './lesson.service';
 })
 export class LessonDetailComponent implements OnInit {
 
+    learn: boolean = true;
+
     lesson$: Observable<Lesson>;
 
     constructor(
