@@ -35,6 +35,14 @@ export class DashboardComponent {
     }
   ];
 
+  upcomingDeadlines:any[] = [
+    {
+      date: 'In 2 days',
+      className: 'Science',
+      assignment: 'Planet Quiz'
+    }
+  ];
+
   getProgWidth(selectedClassName){
     for(let i in this.classesArray){
       if(this.classesArray[i].name === selectedClassName){
