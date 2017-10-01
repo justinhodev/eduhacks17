@@ -17,9 +17,19 @@
             </div>
 
             <ng-template #quiz>
-                <ol>
-                    <li *ngFor="let question of lesson.quiz">{{ question.question }}</li>
-                </ol>
+                <div *ngFor="let question of lesson.quiz">
+                    <p>{{ question.id }}. {{ question.question }}</p>
+
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                              <input type="radio" name="options" id="true" autocomplete="off"> True
+                            </label>
+                        <label class="btn btn-danger">
+                              <input type="radio" name="options" id="false" autocomplete="off"> False
+                            </label>
+                    </div>
+                </div>
+
 
                 <button (click)="gotoLessons(lesson) ">Submit</button>
             </ng-template>
