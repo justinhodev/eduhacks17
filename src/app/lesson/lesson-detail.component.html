@@ -42,11 +42,11 @@
         </div>
 
         <ng-template #quiz>
-            <div *ngFor="let question of lesson.quiz">
+            <div *ngFor="let question of lesson.quiz" class="question-page">
                 <p>{{ question.id }}. {{ question.question }}</p>
 
-                <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-primary active">
+                <div class="btn-group selectBtn" data-toggle="buttons">
+                    <label class="btn btn-success active">
                               <input type="radio" name="options" id="true" autocomplete="off"> True
                             </label>
                     <label class="btn btn-danger">
@@ -55,8 +55,7 @@
                 </div>
             </div>
 
-
-            <button (click)="gotoLessons(lesson) ">Submit</button>
+            <button type="button" id="submit" class="btn btn-success" (click)="gotoLessons(lesson) ">Submit</button>
         </ng-template>
     </div>
 </div>
