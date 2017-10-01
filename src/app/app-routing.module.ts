@@ -5,6 +5,7 @@ import { AwardsComponent } from './awards/awards.component';
 import { ClassesComponent } from './classes/classes.component';
 import { ScienceComponent } from './science/science.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { StudentListComponent} from './student-list/student-list.component';
 
 const appRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent,
@@ -12,6 +13,7 @@ const appRoutes: Routes = [
   { path: 'awards', component: AwardsComponent },
   { path: 'classes', component: ClassesComponent },
   { path: 'science', component: ScienceComponent },
+  { path: 'studentList', component: StudentListComponent },
   { path: '**', redirectTo: 'dashboard'}
 ];
 

@@ -12,6 +12,7 @@ import { AwardsComponent } from './awards/awards.component';
 import { ClassesComponent } from './classes/classes.component';
 import { ScienceComponent } from './science/science.component';
 import { SolarSystemComponent } from './solar-system/solar-system.component';
+import { StudentListComponent } from './student-list/student-list.component';
 
 
 
@@ -22,7 +23,8 @@ import { SolarSystemComponent } from './solar-system/solar-system.component';
     ClassesComponent,
     SolarSystemComponent,
     ScienceComponent,
-    AwardsComponent
+    AwardsComponent,
+    StudentListComponent
     ],
   imports: [
     BrowserModule,
