@@ -13,7 +13,7 @@
             <div *ngIf="learn; else quiz">
                 <p class="card-text">{{ lesson.description }}</p>
 
-                <button (click)="learn = !learn">Quiz!</button>
+                <button type="button" class="btn btn-primary" (click)="learn = !learn">Quiz!</button>
             </div>
 
             <ng-template #quiz>
@@ -21,7 +21,7 @@
                     <p>{{ question.id }}. {{ question.question }}</p>
 
                     <div class="btn-group" data-toggle="buttons">
-                        <label class="btn btn-primary active">
+                        <label class="btn btn-success active">
                               <input type="radio" name="options" id="true" autocomplete="off"> True
                             </label>
                         <label class="btn btn-danger">
@@ -30,12 +30,11 @@
                     </div>
                 </div>
 
-
-                <button (click)="gotoLessons(lesson) ">Submit</button>
+                <button type="button" class="btn btn-success" (click)="gotoLessons(lesson) ">Submit</button>
             </ng-template>
 
             <div>
-                <button (click)="gotoLessons(lesson)">Back</button>
+                <button type="button" class="btn btn-secondary" (click)="gotoLessons(lesson)">Back</button>
             </div>
         </div>
     </div>
